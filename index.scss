@@ -1,0 +1,84 @@
+@import "./reset";
+
+body {
+  background: linear-gradient(to right, #f8b7b9, #f7f5ae, #aef7cb);
+  font-family: "Roboto", sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz {
+  position: relative;
+
+  width: 600px;
+  height: 460px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 25px;
+
+  &__question,
+  &__end {
+    height: 82px;
+    font-size: 26px;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  &__answers {
+  }
+
+  &__answer-item {
+    display: flex;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+    transition: all 0.1s ease-in;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(238, 235, 235);
+    }
+  }
+  &__radio {
+    cursor: pointer;
+  }
+  &__input-text {
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 15px 20px;
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  &__button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: inline-block;
+    width: 100%;
+    padding: 27px 0;
+    background-color: #8e44ad;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+  }
+}
+
+.title,
+.message,
+.result {
+  font-size: 24px;
+  text-align: center;
+  padding-top: 40px;
+}
+.title {
+  margin-top: 60px;
+}
